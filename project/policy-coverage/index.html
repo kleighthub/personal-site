@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policy Data Coverage &amp; Proof of Insurance Workflow — Kristen Leigh Turner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../../index.html" class="nav-logo">Kristen Leigh Turner</a>
+  <ul class="nav-links">
+    <li><a href="../../index.html#about">About</a></li>
+    <li><a href="../../index.html#founder-support">Founder Support</a></li>
+    <li><a href="../../index.html#career-coaching">Coaching</a></li>
+    <li><a href="../../index.html#product-portfolio">Product</a></li>
+    <li><a href="../../index.html#writing">Writing</a></li>
+    <li><a href="../../resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../../index.html#about" onclick="closeMenu()">About</a>
+  <a href="../../index.html#founder-support" onclick="closeMenu()">Founder Support</a>
+  <a href="../../index.html#career-coaching" onclick="closeMenu()">Coaching</a>
+  <a href="../../index.html#product-portfolio" onclick="closeMenu()">Product</a>
+  <a href="../../index.html#writing" onclick="closeMenu()">Writing</a>
+  <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">Resume</a>
+</div>
+
+<!-- CASE STUDY HERO -->
+<div class="case-hero">
+  <a href="../../index.html#product-portfolio" class="case-back">&larr; Back to Product Portfolio</a>
+  <p class="hero-eyebrow">Newfront &middot; 2019</p>
+  <h1 class="section-title" style="margin-bottom: 16px;">Policy Data Coverage &amp; Proof of Insurance Workflow</h1>
+  <p class="section-intro" style="margin-bottom: 0;">Managing client insurance policies required a large administrative team and lots of manual data entry. Goal: simplify data entry and improve data accuracy.</p>
+
+  <div class="case-meta">
+    <div class="case-meta-item">Role<strong>Senior Product Manager</strong></div>
+    <div class="case-meta-item">Team<strong>3 engineers</strong></div>
+    <div class="case-meta-item">Timeline<strong>4 weeks</strong></div>
+    <div class="case-meta-item">Outcome<strong>Reduced errors by 78%</strong></div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<div class="case-row" style="padding: 24px var(--gutter) 44px;">
+  <div class="case-card case-card-row">
+    <div class="case-row-media">
+      <img class="case-img" src="images/coi-feature.gif" alt="Workflow tool for generating an Acord 25 Certificate of Liability Insurance">
+    </div>
+    <div class="case-row-text">
+      <p class="case-row-number">1</p>
+      <p class="case-section-eyebrow">Problem</p>
+      <p>Proof of insurance forms, known as "certs" or COIs, are needed by customers for a variety of purposes: securing loans, bidding on contract work, basically any time two contracting parties agree to work together. Customers expect quick turnaround on COIs and total accuracy.</p>
+      <p>Part of Newfront's operational model was to delegate as much work as possible away from costly Account Managers to clerical support staff, including issuing COIs. As the company grew, so did the backlog of cert requests and the error rate.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SOLUTION -->
+<div class="case-section" style="padding-top: 20px; padding-bottom: 44px;">
+  <div class="case-card">
+    <div class="case-editorial">
+      <p class="case-editorial-number">2</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">Solution</p>
+        <p>By leveraging third-party resources to autopopulate information such as NAIC number and street addresses, we increased speed and data accuracy at the same time. We also redesigned the data entry fields to resolve confusion among clerical staff who often didn't have an insurance background, and migrated all coverage data out of a legacy system, eliminating discrepancies between the two databases.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<div class="case-callout" style="padding-bottom: 96px;">
+  <div class="case-callout-inner">
+    <div class="case-editorial">
+      <p class="case-editorial-number">3</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">Results</p>
+        <ul class="case-list">
+          <li>Decreased errors in proof of insurance by 78%</li>
+          <li>Reduced manual data entry by 25 hours/week</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="case-section" style="padding-top: 0; padding-bottom: 20px;">
+  <img class="case-img" src="images/coi-writing-company.gif" alt="Writing Company field automatically populating the NAIC number" style="margin-top: -40px; box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1);">
+</div>
+
+<!-- BONUS -->
+<div class="case-section" style="padding-top: 20px; padding-bottom: 96px;">
+  <div class="case-card">
+    <div class="case-editorial">
+      <p class="case-editorial-number">4</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">Bonus</p>
+        <p>We also invested in the long term: building standardized UI components in Storybook for reuse across the application, and decoupling the document object from the recipient object to support bulk creation of certificate holders.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer style="padding: 48px 24px;">
+  <p class="footer-name">Kristen Leigh Turner</p>
+  <p class="footer-copy">&copy; 2026 &middot; kleightspace.com</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
