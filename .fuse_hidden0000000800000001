@@ -283,6 +283,9 @@
           <p class="card-stat">Key outcome or metric</p>
         </div>
       </a>
+      <div class="card-audio">
+        <audio controls src="audio/placeholder-voiceover.mp3"></audio>
+      </div>
     </div>
 
     <div class="card">
@@ -299,6 +302,9 @@
           <p class="card-stat">Key outcome or metric</p>
         </div>
       </a>
+      <div class="card-audio">
+        <audio controls src="audio/placeholder-voiceover.mp3"></audio>
+      </div>
     </div>
 
     <div class="card">
@@ -321,6 +327,9 @@
           <p class="card-stat">$38.1M in incremental purchase value</p>
         </div>
       </a>
+      <div class="card-audio">
+        <audio controls src="audio/wishlist.m4a"></audio>
+      </div>
     </div>
 
     <div class="card">
@@ -340,6 +349,9 @@
           <p class="card-stat">Key outcome or metric</p>
         </div>
       </a>
+      <div class="card-audio">
+        <audio controls src="audio/placeholder-voiceover.mp3"></audio>
+      </div>
     </div>
 
     <div class="card">
@@ -356,6 +368,9 @@
           <p class="card-stat">Key outcome or metric</p>
         </div>
       </a>
+      <div class="card-audio">
+        <audio controls src="audio/placeholder-voiceover.mp3"></audio>
+      </div>
     </div>
 
     <div class="card">
@@ -371,6 +386,9 @@
           <p class="card-stat">Key outcome or metric</p>
         </div>
       </a>
+      <div class="card-audio">
+        <audio controls src="audio/placeholder-voiceover.mp3"></audio>
+      </div>
     </div>
 
     <div class="card">
@@ -388,6 +406,9 @@
           <p class="card-stat">Key outcome or metric</p>
         </div>
       </a>
+      <div class="card-audio">
+        <audio controls src="audio/placeholder-voiceover.mp3"></audio>
+      </div>
     </div>
 
     <div class="card">
@@ -407,6 +428,9 @@
           <p class="card-stat">5M+ purchasable products</p>
         </div>
       </a>
+      <div class="card-audio">
+        <audio controls src="audio/placeholder-voiceover.mp3"></audio>
+      </div>
     </div>
 
   </div>
