@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standardized API Error Messaging — Kristen Leigh Turner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../../index.html" class="nav-logo">Kristen Leigh Turner</a>
+  <ul class="nav-links">
+    <li><a href="../../index.html#about">About</a></li>
+    <li><a href="../../index.html#founder-support">Founder Support</a></li>
+    <li><a href="../../index.html#career-coaching">Coaching</a></li>
+    <li><a href="../../index.html#product-portfolio">Product</a></li>
+    <li><a href="../../index.html#writing">Writing</a></li>
+    <li><a href="../../resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../../index.html#about" onclick="closeMenu()">About</a>
+  <a href="../../index.html#founder-support" onclick="closeMenu()">Founder Support</a>
+  <a href="../../index.html#career-coaching" onclick="closeMenu()">Coaching</a>
+  <a href="../../index.html#product-portfolio" onclick="closeMenu()">Product</a>
+  <a href="../../index.html#writing" onclick="closeMenu()">Writing</a>
+  <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">Resume</a>
+</div>
+
+<!-- CASE STUDY HERO -->
+<div class="case-hero">
+  <a href="../../index.html#product-portfolio" class="case-back">&larr; Back to Product Portfolio</a>
+  <p class="hero-eyebrow">Shippo &middot; 2018</p>
+  <h1 class="section-title" style="margin-bottom: 16px;">Standardized API Error Messaging</h1>
+  <p class="section-intro" style="margin-bottom: 0;">Created the error codes, messages, mapping, and API documentation for Manifest errors across 40+ shipping carriers.</p>
+
+  <div class="case-meta">
+    <div class="case-meta-item">Role<strong>Product Manager</strong></div>
+    <div class="case-meta-item">Team<strong>Carriers Engineering</strong></div>
+    <div class="case-meta-item">Timeline<strong>2018</strong></div>
+    <div class="case-meta-item">Outcome<strong>100+ carrier errors simplified to 15 codes</strong></div>
+  </div>
+</div>
+
+<div class="case-hero" style="padding-top: 16px; padding-bottom: 20px;">
+  <img class="case-feature-img" src="images/errors-feature.gif" alt="Shippo API documentation listing Manifest error codes and messages, with a response example">
+</div>
+
+<!-- PROBLEM -->
+<div class="case-section" style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="case-card">
+    <div class="case-editorial">
+      <p class="case-editorial-number">1</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">Problem</p>
+        <p>Shippo offers an API that connects to over forty shipping carriers around the world. <strong>The primary product challenge is creating a generic abstraction layer that works across 40+ different web services and APIs</strong> &mdash; in other words, how do you build the simplest, easiest API that doesn't require the user to understand all the details of the carrier's own API?</p>
+        <p>Whenever a new, high-value customer started integrating our API, I'd join a Slack channel with their engineering team to hear real-time feedback, blockers, and suggestions. Shippo's lack of documented error messages was a recurring complaint.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SOLUTION -->
+<div class="case-row" style="padding: 20px var(--gutter) 44px;">
+  <div class="case-card case-card-row">
+    <div class="case-row-media">
+      <img class="case-img" src="images/errors-canada-post.gif" alt="Error codes for Canada Post &mdash; now imagine handling FedEx, UPS, USPS, and DHL">
+    </div>
+    <div class="case-row-text">
+      <p class="case-row-number">2</p>
+      <p class="case-section-eyebrow">Solution</p>
+      <p><strong>I led the first effort to establish standardized API error messaging.</strong></p>
+      <p>Previously, the Shippo API passed the carrier's response verbatim. That could range from a useless numeric code like "120121" to a message that referenced a field in the carrier's own schema, but not the name of that field in the Shippo API &mdash; e.g. "1459 The Reason for Export code value is not valid."</p>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<div class="case-callout">
+  <div class="case-callout-inner">
+    <div class="case-editorial">
+      <p class="case-editorial-number">3</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">Results</p>
+        <ul class="case-list">
+          <li>Simplified 100+ different unique carrier errors into just 15 error codes</li>
+          <li>Introduced <code>manifest</code> endpoint errors, many of which could be reused across other endpoints</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BONUS -->
+<div class="case-section" style="padding-top: 20px; padding-bottom: 96px;">
+  <div class="case-card">
+    <div class="case-editorial">
+      <p class="case-editorial-number">4</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">Bonus</p>
+        <p>I also established the guidelines for creating new error codes and messages going forward: human-readable slugs, no numbers, in the format <code>[API_object_name_problem_affected_field]</code>, with message details describing the problem and what action to take to resolve it.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer style="padding: 48px 24px;">
+  <p class="footer-name">Kristen Leigh Turner</p>
+  <p class="footer-copy">&copy; 2026 &middot; kleightspace.com</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
