@@ -343,13 +343,14 @@ section { padding: 72px var(--gutter); }
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2px;
+  gap: 16px;
 }
 
 .card {
   background: var(--white);
   display: block;
   overflow: hidden;
+  border-radius: 8px;
   transition: transform 0.25s;
 }
 

@@ -46,10 +46,10 @@
   <p class="section-intro" style="margin-bottom: 0;">Created the error codes, messages, mapping, and API documentation for Manifest errors across 40+ shipping carriers.</p>
 
   <div class="case-meta">
-    <div class="case-meta-item">Role<strong>Product Manager</strong></div>
-    <div class="case-meta-item">Team<strong>Carriers Engineering</strong></div>
-    <div class="case-meta-item">Timeline<strong>2018</strong></div>
-    <div class="case-meta-item">Outcome<strong>100+ carrier errors simplified to 15 codes</strong></div>
+    <div class="case-meta-item">Role<strong>Senior Product Manager</strong></div>
+    <div class="case-meta-item">Team<strong>1 engineer</strong></div>
+    <div class="case-meta-item">Timeline<strong>2 months</strong></div>
+    <div class="case-meta-item">Outcome<strong>Increased developer efficiency</strong></div>
   </div>
 </div>
 
@@ -64,7 +64,8 @@
       <p class="case-editorial-number">1</p>
       <div class="case-editorial-text">
         <p class="case-section-eyebrow">Problem</p>
-        <p>Shippo offers an API that connects to over forty shipping carriers around the world. <strong>The primary product challenge is creating a generic abstraction layer that works across 40+ different web services and APIs</strong> &mdash; in other words, how do you build the simplest, easiest API that doesn't require the user to understand all the details of the carrier's own API?</p>
+        <p><a href="https://docs.goshippo.com/" target="_blank" rel="noopener noreferrer">Shippo offers an API</a> that connects to over forty shipping carriers around the world. <strong>The primary product challenge is creating a generic abstraction layer that works across 40+ different web services and APIs.</strong></p>
+        <p>In other words, how do you build the simplest, easiest API that doesn't require the developer to understand all the details of the carrier's own API?</p>
         <p>Whenever a new, high-value customer started integrating our API, I'd join a Slack channel with their engineering team to hear real-time feedback, blockers, and suggestions. Shippo's lack of documented error messages was a recurring complaint.</p>
       </div>
     </div>
@@ -95,11 +96,15 @@
         <p class="case-section-eyebrow">Results</p>
         <ul class="case-list">
           <li>Simplified 100+ different unique carrier errors into just 15 error codes</li>
-          <li>Introduced <code>manifest</code> endpoint errors, many of which could be reused across other endpoints</li>
+          <li>Introduced <code>manifest</code> endpoint errors, many of which could be reused by other endpoints</li>
         </ul>
       </div>
     </div>
   </div>
+</div>
+
+<div class="case-section" style="padding-top: 0; padding-bottom: 20px;">
+  <img class="case-img" src="images/errors-manifest-example.png" alt="Example manifest error response with a manifest_no_transactions error code and message" style="width: 460px; max-width: 100%; margin: -40px auto 0; display: block;">
 </div>
 
 <!-- BONUS -->
@@ -109,7 +114,13 @@
       <p class="case-editorial-number">4</p>
       <div class="case-editorial-text">
         <p class="case-section-eyebrow">Bonus</p>
-        <p>I also established the guidelines for creating new error codes and messages going forward: human-readable slugs, no numbers, in the format <code>[API_object_name_problem_affected_field]</code>, with message details describing the problem and what action to take to resolve it.</p>
+        <p>I also established the guidelines for creating new error codes and message values.</p>
+        <ul class="case-list">
+          <li>No numeric codes</li>
+          <li>Human-readable slugs</li>
+          <li>Following the format: <code>[API_object_name_problem_affected_field]</code></li>
+          <li>Followed by a concise description of the problem and what action to take to resolve it</li>
+        </ul>
       </div>
     </div>
   </div>
