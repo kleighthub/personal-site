@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philosotees — Kristen Leigh Turner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<style>
+  .philosotees-photo-row {
+    display: flex;
+    gap: 16px;
+    margin: 0 0 24px;
+  }
+  .philosotees-photo-row .case-img {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .philosotees-photo-row {
+      flex-direction: column;
+    }
+  }
+  .philosotees-subhead {
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--dark);
+    border-top: 1px solid var(--accent);
+    padding-top: 20px;
+    margin: 32px 0 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../../index.html" class="nav-logo">Kristen Leigh Turner</a>
+  <ul class="nav-links">
+    <li><a href="../../index.html#about">About</a></li>
+    <li><a href="../../index.html#founder-support">Founder Support</a></li>
+    <li><a href="../../index.html#career-coaching">Coaching</a></li>
+    <li><a href="../../index.html#product-portfolio">Product</a></li>
+    <li><a href="../../index.html#writing">Writing</a></li>
+    <li><a href="../../archive.html">Archive</a></li>
+    <li><a href="../../resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../../index.html#about" onclick="closeMenu()">About</a>
+  <a href="../../index.html#founder-support" onclick="closeMenu()">Founder Support</a>
+  <a href="../../index.html#career-coaching" onclick="closeMenu()">Coaching</a>
+  <a href="../../index.html#product-portfolio" onclick="closeMenu()">Product</a>
+  <a href="../../index.html#writing" onclick="closeMenu()">Writing</a>
+  <a href="../../archive.html" onclick="closeMenu()">Archive</a>
+  <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">Resume</a>
+</div>
+
+<!-- CASE STUDY HERO -->
+<div class="case-hero">
+  <a href="../../archive.html" class="case-back">&larr; Back to Archive</a>
+  <p class="hero-eyebrow">Philosotees &middot; 2016</p>
+  <h1 class="section-title" style="margin-bottom: 0;">Philosotees</h1>
+</div>
+
+<!-- CONTENT -->
+<div class="case-section" style="padding-top: 20px; padding-bottom: 96px;">
+  <div class="case-card">
+    <div class="case-editorial-text" style="max-width: 100%;">
+
+      <img class="case-img" src="images/logo.png" alt="Philosotees logo, a hand-drawn face above the wordmark 'philosotees'" style="margin: 0 0 24px;">
+
+      <p>Ever since college, I've wanted to sell a line of philosophy-themed shirts. So one day I decided to just do it.</p>
+      <p>With zero regard for market demand, I opened a Shopify store and launched two designs: &ldquo;Postmodern Conditions&rdquo; celebrating the philosophy of Jean-Francois Lyotard and &ldquo;objet petit a&rdquo; for all those Jacques Lacan fanatics. I sold two. Ever.</p>
+      <p>But I'm still in love with the logo I designed. And one day the world will need a &ldquo;Deus Sive Natura&rdquo; tank top.</p>
+
+      <div class="philosotees-photo-row">
+        <img class="case-img" src="images/richard.jpg" alt="Model wearing the Postmodern Conditions t-shirt">
+        <img class="case-img" src="images/objetpetita.jpg" alt="Model wearing the objet petit a tank top">
+        <img class="case-img" src="images/max.jpg" alt="Model wearing the objet petit a long sleeve shirt">
+      </div>
+
+      <h3 class="philosotees-subhead">Return Policy</h3>
+      <p>If you are unhappy with your Philosotees purchase for any reason, perhaps the reason you are unhappy is something deeper. Keep searching.</p>
+
+      <h3 class="philosotees-subhead">FAQ</h3>
+      <p><strong>How should one Philosotee?</strong> &mdash; By instead asking &ldquo;How <em>could</em> one Philosotee?&rdquo;</p>
+      <p><strong>What is the meaning of Philostees?</strong> &mdash; Imagine someone riding your bus, or sitting at a coffee shop, or in line at the DMV, and this someone is wearing a shirt referencing your favorite philosopher. Boom. Friendship. Amazing.</p>
+      <p><strong>Is there life after Philosotees?</strong> &mdash; Yes. But there was no life before.</p>
+      <p><strong>Is Philosotees all there is?</strong> &mdash; No. Philosotanks also exist.</p>
+      <p><strong>Who created Philosotees?</strong> &mdash; The Loom from the movie Wanted featuring Angelina Jolie. Loom wanted to branch out from fatalistic wovens into simulacra and rhizomatic knits.</p>
+      <p><strong>Who really created Philosotees?</strong> &mdash; Phil Sopher</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer style="padding: 48px 24px;">
+  <p class="footer-name">Kristen Leigh Turner</p>
+  <p class="footer-copy">&copy; 2026 &middot; kleightspace.com</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
