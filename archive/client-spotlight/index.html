@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Spotlight — Kristen Leigh Turner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../../index.html" class="nav-logo">Kristen Leigh Turner</a>
+  <ul class="nav-links">
+    <li><a href="../../index.html#about">About</a></li>
+    <li><a href="../../index.html#founder-support">Founder Support</a></li>
+    <li><a href="../../index.html#career-coaching">Coaching</a></li>
+    <li><a href="../../index.html#product-portfolio">Product</a></li>
+    <li><a href="../../index.html#writing">Writing</a></li>
+    <li><a href="../../archive.html">Archive</a></li>
+    <li><a href="../../resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../../index.html#about" onclick="closeMenu()">About</a>
+  <a href="../../index.html#founder-support" onclick="closeMenu()">Founder Support</a>
+  <a href="../../index.html#career-coaching" onclick="closeMenu()">Coaching</a>
+  <a href="../../index.html#product-portfolio" onclick="closeMenu()">Product</a>
+  <a href="../../index.html#writing" onclick="closeMenu()">Writing</a>
+  <a href="../../archive.html" onclick="closeMenu()">Archive</a>
+  <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">Resume</a>
+</div>
+
+<!-- CASE STUDY HERO -->
+<div class="case-hero">
+  <a href="../../archive.html" class="case-back">&larr; Back to Archive</a>
+  <p class="hero-eyebrow">Newfront &middot; 2019</p>
+  <h1 class="section-title" style="margin-bottom: 0;">Client Spotlight</h1>
+</div>
+
+<!-- CONTENT -->
+<div class="case-section" style="padding-top: 20px; padding-bottom: 96px;">
+  <div class="case-card">
+    <div class="case-editorial-text" style="max-width: 100%;">
+      <p>It's easy to get sucked into the frenzy of meetings, OKRs, P0 bugs, delayed launches, etc. But it's important to carve out time <strong>every week</strong> to be listening to and learning from your users with an unencumbered mind.</p>
+      <p>At Newfront, I met with an Account Manager once a week to write and distribute my own &ldquo;Client Spotlight&rdquo; that was included in the product update email that went out on Fridays.</p>
+      <p><strong>I loved learning about the intricacies of insurance scenarios, distributing this knowledge across the team, and building pride in our client base.</strong></p>
+      <p>Here's one of those stories.</p>
+
+      <img class="case-img" src="../../images/archive/fort-mason.png" alt="Aerial view of Fort Mason on the San Francisco waterfront, with the city skyline behind it" style="margin: 16px 0 24px;">
+
+      <p><strong>CLIENT SPOTLIGHT: FORT MASON</strong></p>
+
+      <p><strong>What they do</strong></p>
+      <p>Fort Mason is a not-for-profit center for arts and culture located here in San Francisco. It is part of the Golden Gate National Recreational Area which also includes Alcatraz, Muir Woods, and the Marin Headlands. Fort Mason receives 1.2 million annual visitors, hosts thousands of events each year, and is the permanent site of nearly a dozen other nonprofit and arts organizations. Fort Mason is also a &ldquo;pioneer in the reuse of military bases&rdquo; having originally served as an Army fort since 1797.</p>
+
+      <p><strong>Why their insurance is interesting</strong></p>
+      <p>Account Manager Brandy is on her third round of remarketing in six months! Here's why: As you can see from the image, much of Fort Mason sits on top of piers. The National Park Service has insurance for the piers but not the decks, which are called pier &ldquo;aprons&rdquo;. The NPS requires that Fort Mason cover the pier aprons on its own policy. For many years, Fort Mason had a Commercial Property policy with Travelers. But upon the December renewal, Travelers took a harder look at the risk and refused to continue covering the pier aprons.</p>
+      <p>A separate Commercial Property policy was written with Golden Bear Insurance just to cover the pier aprons. This puts Fort Mason's program of seven policies across five different carriers.</p>
+      <p>This isn't ideal for the client or for our brokerage: the client has to manage billing with multiple carriers, any potential claims will have to be tracked across different carriers, and the AM must work with a variety of contacts and underwriters.</p>
+      <p>In an effort to simplify life for everyone involved, Brandy has an active quote with Philadelphia who is interested in writing all of the policies aside from Workers Compensation. We'll know the carrier's decision in June.</p>
+      <p>But wait, there's more insurance intrigue! Most insurance policies have a provision for epidemics. As a result of the SARS outbreak in 2003, carriers and underwriters specifically don't cover losses due to epidemics. Fort Mason has a particular kind of Special Event policy called a TULIP (Tenant Users Liability Protection) that insures a certain number of events per month providing coverage to Fort Mason <em>customers</em> that rent their facilities. And that policy has event cancellation coverage which is currently being reviewed for event cancellations as a result of the COVID-19 outbreak. We are hopeful that we may see a successful Coronavirus-related claim pay out!</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer style="padding: 48px 24px;">
+  <p class="footer-name">Kristen Leigh Turner</p>
+  <p class="footer-copy">&copy; 2026 &middot; kleightspace.com</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>

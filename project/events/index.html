@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events — Kristen Leigh Turner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<style>
+  .case-img-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #e8e4dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .case-img-placeholder span {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.3);
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../../index.html" class="nav-logo">Kristen Leigh Turner</a>
+  <ul class="nav-links">
+    <li><a href="../../index.html#about">About</a></li>
+    <li><a href="../../index.html#founder-support">Founder Support</a></li>
+    <li><a href="../../index.html#career-coaching">Coaching</a></li>
+    <li><a href="../../index.html#product-portfolio">Product</a></li>
+    <li><a href="../../index.html#writing">Writing</a></li>
+    <li><a href="../../resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../../index.html#about" onclick="closeMenu()">About</a>
+  <a href="../../index.html#founder-support" onclick="closeMenu()">Founder Support</a>
+  <a href="../../index.html#career-coaching" onclick="closeMenu()">Coaching</a>
+  <a href="../../index.html#product-portfolio" onclick="closeMenu()">Product</a>
+  <a href="../../index.html#writing" onclick="closeMenu()">Writing</a>
+  <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">Resume</a>
+</div>
+
+<!-- CASE STUDY HERO -->
+<div class="case-hero">
+  <a href="../../index.html#product-portfolio" class="case-back">&larr; Back to Product Portfolio</a>
+  <p class="hero-eyebrow">Babylist &middot; 2026</p>
+  <h1 class="section-title" style="margin-bottom: 16px;">Events</h1>
+  <p class="section-intro" style="margin-bottom: 0;">Vision: create the best product in the world for managing a baby shower.</p>
+
+  <div class="case-meta">
+    <div class="case-meta-item">Role<strong>Principal Product Manager</strong></div>
+    <div class="case-meta-item">Team<strong>1 designer + 5 engineers</strong></div>
+    <div class="case-meta-item">Timeline<strong>12 weeks</strong></div>
+    <div class="case-meta-item">Outcome<strong>Results coming soon</strong></div>
+  </div>
+</div>
+
+<div class="case-hero" style="padding-top: 16px; padding-bottom: 20px;">
+  <img class="case-feature-img" src="images/events-feature.jpg" alt="Kristen's Baby Shower event page in the Babylist host view and guest RSVP view">
+</div>
+
+<!-- THE OPPORTUNITY -->
+<div class="case-section" style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="case-card">
+    <div class="case-editorial">
+      <p class="case-editorial-number">1</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">The Opportunity</p>
+        <p>I'm a big believer in productizing behavior people are already doing. LTV extension and TAM expansion don't require reaching for completely different users or use cases.</p>
+        <p>Usually there's an invitation already in front of you: look at what users must leave your product to accomplish elsewhere. As long as that job-to-be-done is thematically related, people would rather use one product.</p>
+        <p>Users had to find solutions outside of Babylist to create, share, and manage their baby shower.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- THE STRATEGY -->
+<div class="case-row" style="padding: 20px var(--gutter) 44px;">
+  <div class="case-card case-card-row">
+    <div class="case-row-media">
+      <img class="case-img" src="images/events-invite-guests.jpg" alt="Invite guests flow: creating a guest list, inviting guests, and tracking RSVPs">
+    </div>
+    <div class="case-row-text">
+      <p class="case-row-number">2</p>
+      <p class="case-section-eyebrow">The Strategy</p>
+      <p>Getting the guest list into the system meant we could build a relationship with each Guest before they became a Gift Giver. Knowing who was invited and whether they were coming let us better predict, and drive, purchases from that registry.</p>
+      <p>Events was extensible to any wishlist, allowing users to create events for birthdays and holiday parties.</p>
+    </div>
+  </div>
+</div>
+
+<!-- THE CHALLENGE -->
+<div class="case-section" style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="case-card">
+    <div class="case-editorial">
+      <p class="case-editorial-number">3</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">The Challenge: A New User Model</p>
+        <p>The user model only had two roles: Registrants and Gift Givers. (Technically we also had Partners and Collaborators, but they were variations of Registrants.)</p>
+        <p>That user model was fine when the registry was the only substrate produced by using Babylist. Meaning, the registry was a surface populated by one side and purchased by the other side. Registrants added items and Gift Givers bought them.</p>
+        <p>But Events introduced a completely new plane of transaction and thus needed new roles: Event Hosts and Event Guests. What's more, a Host could also be a Registrant and/or a Gift Giver &mdash; or neither! Many shower hosts are friends or relatives of the expecting parent.</p>
+        <p>This opens the gate to true TAM expansion: creating a logged-in experience intended for users who are there to manage an event, not to add or buy items from a registry.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GOAL -->
+<div class="case-callout">
+  <div class="case-callout-inner">
+    <div class="case-editorial">
+      <p class="case-editorial-number">4</p>
+      <div class="case-editorial-text">
+        <p class="case-section-eyebrow">Outcome</p>
+        <ul class="case-list">
+          <li>Results coming soon</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="case-section" style="padding-top: 0; padding-bottom: 20px;">
+  <video controls style="width: 620px; max-width: 100%; margin: -40px auto 0; display: block; border: 6px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+    <source src="images/events-demo.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- BONUS -->
+<div class="case-row" style="padding: 20px var(--gutter) 96px;">
+  <div class="case-card case-card-row">
+    <div class="case-row-media">
+      <img class="case-img" src="images/events-sms.png" alt="Transactional SMS invite and RSVP confirmation for Kristen's Baby Shower" style="width: 50%; margin: 0 auto; display: block;">
+    </div>
+    <div class="case-row-text">
+      <p class="case-row-number">5</p>
+      <p class="case-section-eyebrow">Bonus</p>
+      <p>This was our first step into transactional text messaging. We had marketing SMS, but no transactional SMS yet, and this feature became the forcing function to set it up.</p>
+      <p>In the MVP version, users sent out a link to their event themselves. In the second milestone, users could enter a guest list into Babylist, and Babylist would send out those invitations in bulk on the host's behalf.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer style="padding: 48px 24px;">
+  <p class="footer-name">Kristen Leigh Turner</p>
+  <p class="footer-copy">&copy; 2026 &middot; kleightspace.com</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
